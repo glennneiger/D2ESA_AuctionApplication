@@ -1,0 +1,232 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+:global body {
+    background: radial-gradient(ellipse farthest-corner at center top, #d8dbe2 0%, #a9bcd0 100%);
+    height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    background: url("https://hd.unsplash.com/photo-1435777940218-be0b632d06db") no-repeat center center fixed;
+}
+
+:global .login {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 270px;
+    height: 320px;
+    transform: translate(-50%, -50%);
+    background: #F17022;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow:0 17px 50px 0 rgba(0,0,0,.19),0 12px 15px 0 rgba(0,0,0,.24);
+}
+:global .logoImg
+{
+  margin-top: 20px;
+}
+:global .profile {
+    position: absolute;
+    top: 32%;
+    left: 85%;
+    width: 250px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    background: rgba(40, 75, 99, 0.8);
+    background-size: cover;
+    border-radius: 5px;
+}
+:global .profile1 {
+    position: absolute;
+    top: 10.9%;
+    left: 82%;
+    width: 250px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    background: #F17022;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow:0 17px 50px 0 rgba(0,0,0,.19),0 1px 1px 0 rgba(0,0,0,.24);
+}
+
+:global .login a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 0 10px 0;
+    margin: 10px;
+}
+
+:global .login a:hover {
+    text-decoration: underline;
+}
+
+:global .Input {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom: 1px solid brown;
+    margin: 0 20px;
+}
+
+:global .Input input {
+    border: 0;
+    background: transparent;
+    text-align: left;
+    padding: 2px 10px;
+    margin: 18px 4px 0 4px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+}
+
+:global .Input input:required {
+    box-shadow: none;
+}
+
+:global .Input input:focus ~ label {
+    opacity: 1;
+}
+
+:global .Input input[type='text'] ~ label::before {
+    content: "\f007";
+}
+
+:global .Input input[type='password'] ~ label::before {
+    content: "\f023";
+}
+
+:global label {
+    font-family: FontAwesome;
+    color: white;
+    font-size: 14px;
+    margin-top: 17px;
+    transition: opacity .3s ease-in-out;
+}
+
+:global label::before {
+    padding: 5px 5px 0 0;
+    opacity: 0.5;
+}
+
+:global .SignIn {
+    position: relative;
+    margin: 15px 0 5px 0;
+    left: 15%;
+    transform: translateX(-50%);
+    background: brown;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 50%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: center;
+    box-shadow:0 17px 50px 0 rgba(0,0,0,.19),0 12px 15px 0 rgba(0,0,0,.24);
+}
+
+:global .logo {
+    text-align: center;
+    color: white;
+}
+:global .cicon {
+  margin-top: 20px;
+  margin-left: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+:global .logo i {
+    display: block;
+    padding: 20px 0 0 0;
+    font-size: 70px;
+    transform: translateX(-5px);
+}
+
+:global .logo span {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+:global .animation-enter {
+    opacity: .01;
+}
+
+:global .animation-enter.animation-enter-active {
+    opacity: 1;
+    transition: opacity .6s ease, margin .5s ease;
+}
+
+:global .animation-leave {
+    margin-top: 0px;
+    opacity: 1;
+}
+
+:global .animation-leave.animation-leave-active {
+    margin-top: -30px;
+    opacity: .01;
+    transition: opacity .2s ease;
+}
+
+:global .animation-appear {
+    opacity: 0.01;
+}
+
+:global .animation-appear.animation-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+:global .ePcircle {
+width:100px;
+height:100px;
+overflow:hidden;
+border-radius:100%;
+position:relative;
+border:4px solid #fff;
+margin-top: 20px;
+margin-left: 100px;
+box-shadow:0 6px 20px 0 rgba(0,0,0,.19),0 8px 17px 0 rgba(0,0,0,.2);
+}
+:global .piDiag {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    width: 300px;
+    height: 370px;
+    background-size: cover;
+    border-radius: 5px;
+}
+:global .eprofile {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    width: 300px;
+    height: 370px;
+    transform: translate(-50%, -50%);
+    background: #F17022;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow:0 17px 50px 0 rgba(0,0,0,.19),0 12px 15px 0 rgba(0,0,0,.24);
+}
+:global .h12{
+  color : white;
+  display: block;
+  word-wrap: break-word;
+  display:block;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+:global .h13{
+  color : white;
+  display: block;
+  word-wrap: break-word;
+  display:block;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
